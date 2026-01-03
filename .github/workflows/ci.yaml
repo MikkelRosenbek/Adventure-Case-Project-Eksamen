@@ -1,10 +1,10 @@
-name: Java test with caching
+name: Java test
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
+
 
 jobs:
   java-test:
