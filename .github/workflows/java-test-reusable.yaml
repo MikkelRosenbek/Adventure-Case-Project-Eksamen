@@ -1,7 +1,5 @@
 name: Java test reusable
 on:
-  workflow_dispatch:
-
   workflow_call:
 
 jobs:
@@ -18,7 +16,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Cache Maven packages
-        uses: actions/cache@d4323d4df104b026a6aa633fdb11d772146be0bf
+        uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: maven-${{ hashFiles('**/pom.xml') }}
